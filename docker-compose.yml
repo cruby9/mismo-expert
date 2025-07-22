@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  mismo-expert:
+    build: .
+    container_name: mismo-expert-mcp
+    image: mismo-expert:latest
+    restart: unless-stopped
+    volumes:
+      # Persist the parsed database
+      - ./db:/app/db
+      # For development - mount source code
+      # - ./src:/app/src
+      # - ./data:/app/data
+    environment:
+      - NODE_ENV=production
+      - LOG_LEVEL=info
+    # For MCP stdio communication
+    stdin_open: true
+    tty: true
+    # If we need to expose HTTP endpoint later
+    # ports:
+    #   - "8080:8080"
+    
+  # Optional: Add a test client service
+  test-client:
+    image: node:20-alpine
+    container_name: mismo-test-client
+    depends_on:
+      - mismo-expert
+    volumes:
+      - ./test:/app/test
+    working_dir: /app
+    command: tail -f /dev/null  # Keep container running for testing
+    profiles:
+      - test

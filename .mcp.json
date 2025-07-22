@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "mismo-expert": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["./src/server.js"],
+      "env": {}
+    }
+  }
+}
