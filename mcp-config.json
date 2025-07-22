@@ -1,9 +1,0 @@
-{
-  "mcpServers": {
-    "mismo-expert": {
-      "command": "docker",
-      "args": ["exec", "-i", "mismo-expert-mcp", "node", "src/server.js"],
-      "env": {}
-    }
-  }
-}

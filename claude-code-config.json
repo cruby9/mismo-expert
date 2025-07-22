@@ -1,9 +1,0 @@
-{
-  "mcpServers": {
-    "mismo-expert": {
-      "command": "node",
-      "args": ["/home/ccr/form_program/mismo-expert-mcp/src/server.js"],
-      "env": {}
-    }
-  }
-}
