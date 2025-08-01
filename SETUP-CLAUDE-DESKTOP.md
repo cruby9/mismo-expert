@@ -19,7 +19,7 @@ Add this to your configuration file (merge with existing servers if any):
     "mismo-expert": {
       "command": "node",
       "args": [
-        "/home/ccr/form_program/mismo-expert-mcp/src/server.js"
+        "./src/server.js"
       ]
     }
   }
@@ -92,7 +92,7 @@ If it doesn't work:
 
 2. **Test manually**:
    ```bash
-   cd /home/ccr/form_program/mismo-expert-mcp
+   cd /path/to/mismo-expert-mcp
    node src/server.js
    ```
    Then type: `{"jsonrpc":"2.0","method":"initialize","params":{},"id":1}`

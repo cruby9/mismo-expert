@@ -312,15 +312,15 @@ claude mcp add mismo-expert "docker exec -i mismo-expert-mcp node src/server.js"
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Add new query types in `src/query-engine.js`
-4. Add tests in `test-comprehensive.js`
-5. Submit a pull request
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to:
+- Report issues
+- Submit pull requests
+- Add new features
+- Improve documentation
 
 ## 📄 License
 
-MIT License - See LICENSE file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## 🙏 Acknowledgments
 

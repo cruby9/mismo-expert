@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { spawn } from 'child_process';
 
-const mcpProcess = spawn('/home/ccr/form_program/mismo-expert-mcp/mcp-wrapper.sh', [], {
+const mcpProcess = spawn('./mcp-wrapper.sh', [], {
   stdio: ['pipe', 'pipe', 'pipe']
 });
 
